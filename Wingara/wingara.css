@@ -1,0 +1,898 @@
+*{
+    margin: 0 auto;
+}
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+body{
+    margin: 0 auto;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    line-height: 20px;
+     
+    
+}
+.wrapper{
+    max-width: 100%;
+}
+@font-face {
+  font-family: 'proximanova-semibold-webfont';
+  src: url('fonts/proximanova-semibold-webfont.ttf');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'keplerstd-regular-webfont';
+  src: url('fonts/keplerstd-regular-webfont.ttf');
+  font-style: normal;
+}
+.container{
+   
+    margin: 50px;
+}
+.header{
+    margin: 10px 50px;
+}
+.logo{
+    float: left;
+}
+.nav-menu{
+    margin: 0 auto;
+    padding: 0px 5px 20px;
+    font-size: 18px;
+    line-height: normal;
+    text-align: center;
+    float: left;
+    margin-left: 170px;
+    font-family: 'proximanova-semibold-webfont';
+    
+    
+}
+.nav-menu ul li{
+    display: inline-block;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color: #474747;
+}
+.like{
+    float: right;
+}
+.like button{
+    background: transparent;
+    border: none;
+}
+.mainbody{
+    position: relative;
+}
+.slidertitle {
+  font-family: "keplerstd-regular-webfont";
+  font-size: 54px;
+  left: 431px;
+  position: absolute;
+  text-align: center;
+  top: 282px;
+  color: #fff;
+}
+.slidertitle p {
+  font-size: 54px;
+  text-shadow: 1px 1px #333;
+}
+
+.lefttext {
+  color: #03a7b1;
+  float: left;
+  font-family: "keplerstd-regular-webfont";
+  font-size: 32px;
+  line-height: normal;
+  margin: 15px 0 0 30px;
+  width: 619px;
+}
+.lefttext p{
+    font-family: "keplerstd-regular-webfont";
+    font-size: 32px;
+}
+.righttext {
+  float: right;
+  font-family: "keplerstd-regular-webfont";
+  font-size: 20px;
+  line-height: normal;
+  margin: 15px 79px 0px 0px;
+  width: 435px;
+  color: #333333;
+}
+.righttext p{
+    font-family: "keplerstd-regular-webfont";
+    font-size: 20px;
+}
+.righttext a{
+    color: #04b0bb;
+}
+.explore{
+    margin-top: 50px;
+}
+.exploretext {
+  float: left;
+  font-size: 39px;
+  padding: 100px;
+  text-align: center;
+  font-family: "keplerstd-regular-webfont";
+
+}
+.exploretext a{
+    text-align: center;
+  text-decoration: none;
+  color: #999999;
+}
+.exploreimage{
+    float:right;  
+    padding-right: 57px;  
+}
+.explore ul li{
+    display: inline;
+}
+.explore ul li a{
+    text-decoration: none;
+    padding: 3px;
+    
+}
+
+.quotas{
+    margin-top:60px;
+}
+.slides{
+    text-align: center;
+    font-family: "keplerstd-regular-webfont","proximanova-regular-webfont";
+    font-size: 28px;
+    font-style: italic;
+}
+.horizontalline p{
+    font-family: "proximanova-regular-webfont"!important;
+    font-style: normal;
+    font-size: 16px;
+    color:#666666;
+}
+
+.horizontalline span {
+  background-color: #e5e4e4;
+  color: #e5e4e4;
+  display: block;
+  height: 4px;
+  margin-bottom: 30px;
+  margin-left: 146px;
+  margin-top: 15px;
+  width: 80%;
+}
+.flex-control-paging li a {
+    background: #e2e2e2!important;
+    }
+    
+.flex-control-paging li a.flex-active {
+  background: #cccccc!important;
+  
+  cursor: pointer;
+}
+.flex-control-nav {
+  bottom: -40px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+ 
+}
+.flexslider {
+  margin: 0 0 70px;
+}
+.mainfooter{
+    background: #252525;
+}
+.footer {
+  background: #252525;
+  padding: 35px 35px 0px;
+   
+}
+.footerlogo {
+  float: left;
+  margin-left: 100px;
+  width: 475px;
+}
+.footerinfo {
+  float: left;
+  font-size: 14px;
+  width: 400px;
+  font-family: "proximanova-regular-webfont"!important;
+}
+.footerinfo ul li a{
+    display: block;
+    text-decoration: none;
+    color: #bfbdbd;
+    font-family: "proximanova-regular-webfont";
+}
+.footerinfo p{
+    font-family: "proximanova-regular-webfont";
+}
+.footerinfo ul li {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.footercheck {
+  float: right;
+  padding-right: 20px;
+  width: 175px;
+  font-family: "proximanova-regular-webfont";
+  
+}
+.footercheck button {
+  background: none repeat scroll 0 0 transparent;
+  border: 2px solid #acacac;
+  color: #fff;
+  cursor: pointer;
+  font-family: "proximanova-regular-webfont";
+  font-size: 15px;
+  padding: 10px;
+  width: 100%;
+}
+
+.footerline span {
+  background-color: #3e3e3e;
+  color: #3e3e3e;
+  display: block;
+  height: 1px;
+  margin-bottom: 0;
+  margin-left: 102px;
+  margin-top: 115px;
+  width: 91%;
+}
+.footertext{
+ background: #252525;
+ padding: 35px;
+}
+.footertext1 {
+  color: #757474;
+  float: left;
+  margin-left: 100px;
+  font-size: 14px;
+}
+.footertext2{
+    float: right;
+}
+
+.footertext2 ul li{
+    display: inline;
+}
+.footertext2 a{
+    text-decoration: none;
+    color: #757474;
+    font-family: "proximanova-regular-webfont";
+    font-size: 14px;
+    border-right: solid 2px #757474;
+    padding: 0px 10px;
+}
+.footertext2 li:last-child a{
+   border-right: none;
+}
+/* Media Queries  for IPad Landscape 1054 starts*/
+@media screen and (max-width: 1054px) {
+    	.container {
+    		max-width:100%;
+            }
+
+            img{
+                max-width: 100%;
+            }
+            
+.logo{
+    width: 220px;
+}
+.nav-menu {
+  margin: 0 auto;
+  width: 547px;
+  padding: 0px 0px 20px;
+}
+.nav-menu ul{
+    margin-left: 45px;
+}
+.nav-menu ul li a{ 
+    padding: 8px;
+   }
+.like{
+    width: 40px;
+}
+.slidertitle {
+  left: 253px;
+  top: 211px;
+ }  
+.slidertitle p{
+    font-size: 45px;
+}  
+.lefttext {
+  font-size: 26px;
+  width: 500px;
+}
+.lefttext p{
+ 
+    font-size: 26px;
+}
+.righttext {
+
+  font-size: 18px;
+  line-height: normal;
+  margin: 15px 20px 0px 0px;
+  width: 330px;
+
+}
+.righttext p{
+    font-family: "keplerstd-regular-webfont";
+    font-size: 18px;
+}
+.exploretext {
+  float: left;
+  font-size: 28px;
+  padding: 69px 0 0;
+  width: 197px;
+}
+
+.exploreimage{
+    float:left;  
+    padding-right: 0px; 
+    width: 710px;
+    }
+.exploreimage img{
+    max-width: 31%;
+    height: 200px;
+}
+.quotas{
+    margin-top:60px;
+}
+.slides{
+    text-align: center;
+    font-family: "keplerstd-regular-webfont","proximanova-regular-webfont";
+    font-size: 20px;
+    font-style: italic;
+}
+.horizontalline p{
+    font-family: "proximanova-regular-webfont"!important;
+    font-style: normal;
+    font-size: 14px;
+    color:#666666;
+}
+
+.horizontalline span {
+  background-color: #e5e4e4;
+  color: #e5e4e4;
+  display: block;
+  height: 4px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  margin-top: 15px;
+  width: 85%;
+}  
+.footerlogo {
+  float: left;
+  margin-left: 50px;
+  width: 350px;
+}
+.footerinfo {
+  width: 340px;
+}
+
+/* Media Queries  for IPad Landscape 1054 Ends*/
+/* Media Queries  for IPad Landscape 790 Starts*/
+@media screen and (max-width: 790px) {
+    	.container {
+    		max-width:100%;
+            }
+
+            img{
+                max-width: 100%;
+            }
+.header {
+  margin: 10px 50px;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  width: 220px;
+}
+.nav-menu {
+  margin-bottom: 20px;
+  padding: 6px 0 10px;
+  position: relative;
+  right: 28px;
+  top: 31px;
+  width: 603px;
+}
+.nav-menu ul li a {
+  padding: 20px;
+}
+.nav-menu ul {
+  margin-left: 0px;
+}
+
+.like {
+  left: 507px;
+  position: absolute;
+  width: 40px;
+}
+.slidertitle {
+  left: 175px;
+  top: 148px;
+}
+.slidertitle p {
+  font-size: 36px;
+}
+.lefttext {
+  margin: 10px 0 10px 10px;
+  width: 365px;
+}
+.lefttext p{
+    font-size: 20px;
+}
+.righttext {
+  font-size: 18px;
+  line-height: normal;
+  margin: 15px 0 0;
+  width: 250px;
+}
+.righttext p {
+  font-family: "keplerstd-regular-webfont";
+  font-size: 14px;
+}
+.exploretext {
+  float: left;
+  font-size: 20px;
+  padding: 49px 0 0;
+  width: 150px;
+}
+.exploreimage {
+  float: left;
+  padding-right: 0;
+  width: 500px;
+}
+.exploreimage img {
+  height: 115px;
+  max-width: 50%;
+}
+.slides{
+    text-align: center;
+    font-family: "keplerstd-regular-webfont","proximanova-regular-webfont";
+    font-size: 18px;
+    font-style: italic;
+}
+.horizontalline p {
+  font-size: 12px;
+  }
+.footerlogo {
+  float: left;
+  margin-left: 0px;
+  width: 200px;
+  margin-right: 55px;
+}
+.footerinfo {
+  width: 274px;
+}
+.footercheck {
+  padding-right: 0;
+  width: 127px;
+}
+.footercheck button {
+  font-size: 12px;
+  padding: 5px;
+}
+.footerline span {
+  margin-left: 0px;
+  width: 100%;
+}
+.footertext1 {
+  margin-left: 0px;
+}
+}
+/* Media Queries  for IPad Landscape 790 Ends*/
+
+/* Media Queries  for iPhone 6 Plump landscape � width: 766px Starts*/
+@media screen and (max-width: 766px) {
+    	.container {
+    		max-width:100%;
+            }
+            .container{
+                margin: 15px;
+            }
+            img{
+                max-width: 100%;
+            }
+.nav-menu ul {
+  margin-left: 20px;
+}
+.righttext {
+  font-size: 16px;
+  line-height: normal;
+  margin: 15px 0 0;
+  width: 265px;
+}
+.righttext p {
+  font-family: "keplerstd-regular-webfont";
+  font-size: 15px;
+}
+.horizontalline span {
+  margin-bottom: 30px;
+  margin-left: 28px;
+  margin-top: 15px;
+  width: 93%;
+}
+.horizontalline p {
+  font-size: 11px;
+}
+.footerinfo {
+  width: 265px;
+}
+.footertext2 a {
+  padding: 0 6px;
+  text-decoration: none;
+}
+}
+/* Media Queries  iPhone 6 Plump landscape � width: 766px Ends*/
+
+/* Media Queries  iPhone 6 landscape � width: 697px Starts*/
+
+@media screen and (max-width: 697px) {
+    	.container {
+    		max-width:100%;
+            }
+            .container{
+                margin: 15px;
+            }
+            img{
+                max-width: 100%;
+            }
+            
+.header {
+  margin: 10px 20px;
+  position: relative;
+}
+.nav-menu {
+  width: 615px;
+}
+.lefttext {
+  margin: 10px 0;
+  width: 345px;
+}
+.lefttext p {
+  font-size: 18px;
+}
+.righttext {
+  font-size: 16px;
+  line-height: normal;
+  margin: 15px 0 0;
+  width: 271px;
+}
+.righttext p {
+  font-family: "keplerstd-regular-webfont";
+  font-size: 14px;
+}
+.exploretext {
+  float: left;
+  font-size: 16px;
+  padding: 49px 0 0;
+  width: 110px;
+}
+.slides{
+    text-align: center;
+    font-family: "keplerstd-regular-webfont","proximanova-regular-webfont";
+    font-size: 15px;
+    font-style: italic;
+}
+.horizontalline span {
+  margin-bottom: 30px;
+  margin-left: 23px;
+  margin-top: 15px;
+  width: 93%;
+}
+.horizontalline p {
+  font-size: 10px;
+}
+.footerlogo {
+  float: left;
+  margin-left: 0;
+  margin-right: 34px;
+  margin-top: 4px;
+  width: 151px;
+}
+.footercheck {
+  padding-right: 0;
+  width: 120px;
+}
+.footercheck button {
+  font-size: 12px;
+  padding: 5px;
+}
+.footertext2 a {
+  padding: 0 4px;
+  text-decoration: none;
+}
+}
+/* Media Queries  iPhone 6 landscape  width: 697px Ends*/
+
+/* Media Queries  for Android Nexus Landscape 630 Starts*/
+@media screen and (max-width: 630px) {
+    	.container {
+    		max-width:100%;
+            }
+            .container{
+                margin: 15px;
+            }
+            img{
+                max-width: 100%;
+            }
+.header {
+  margin: 0px;
+  position: relative;
+}
+.logo {
+  left: 15px;
+  position: relative;
+  width: 220px;
+}
+.nav-menu {
+  margin-bottom: 20px;
+  padding: 6px 0 10px;
+  position: relative;
+  right: 28px;
+  top: 31px;
+  width: 603px;
+}
+.like {
+  left: 461px;
+  margin-right: 50px;
+  position: absolute;
+}
+.slidertitle {
+  left: 175px;
+  top: 126px;
+}
+
+.slidertitle p {
+  font-size: 30px;
+}
+.lefttext {
+  margin: 10px 0 0;
+  width: 320px;
+}
+.lefttext p {
+  font-size: 18px;
+}
+.righttext {
+  font-size: 14px;
+  line-height: normal;
+  margin: 10px 0 0;
+  width: 230px;
+}
+.righttext p {
+  font-family: "keplerstd-regular-webfont";
+  font-size: 14px;
+}
+.exploretext {
+  float: left;
+  font-size: 16px;
+  padding: 42px 0 0;
+  width: 115px;
+}
+.exploreimage {
+  float: left;
+  padding-right: 0;
+  width: 438px;
+}
+.exploreimage img {
+  height: 100px;
+  max-width: 50%;
+}
+.slides{
+    text-align: center;
+    font-family: "keplerstd-regular-webfont","proximanova-regular-webfont";
+    font-size: 16px;
+    font-style: italic;
+}
+.horizontalline span {
+  height: 3px;
+  margin-bottom: 30px;
+  margin-left: 0;
+  margin-top: 15px;
+  width: 100%;
+}
+.horizontalline p {
+  font-size: 10px;
+}
+.footer {
+  background: none repeat scroll 0 0 #252525;
+  padding: 25px 12px 0;
+}
+.footerlogo {
+  float: left;
+  margin-left: 0;
+  margin-right: 25px;
+  margin-top: 3px;
+  width: 150px;
+}
+.footerinfo {
+  width: 255px;
+}
+.footercheck {
+  padding-right: 0;
+  width: 110px;
+}
+.footercheck button {
+  font-size: 12px;
+  padding: 3px;
+}
+.footertext1 {
+  color: #757474;
+  float: left;
+  font-size: 12px;
+  margin-left: 0px;
+}
+.footertext2 a {
+  border-right: 1px solid #757474;
+  font-size: 12px;
+  padding: 0 3px;
+}
+
+}
+/* Media Queries  for Android Nexus Landscape 630 Ends*/
+
+/* Media Queries  for iPhone 5 landscape � width: 598px Starts*/
+
+@media screen and (max-width: 598px) {
+    	.container {
+    		max-width:100%;
+            }
+            .container{
+                margin: 15px;
+            }
+            img{
+                max-width: 100%;
+            }
+.like {
+  left: 425px;
+  margin-right: 50px;
+  position: absolute;
+}
+.slidertitle {
+  left: 140px;
+  top: 117px;
+}
+.lefttext {
+  margin: 10px 0 0;
+  width: 300px;
+}
+.lefttext p {
+  font-size: 16px;
+}
+.righttext {
+  font-size: 14px;
+  line-height: normal;
+  margin: 10px 0 0;
+  width: 210px;
+}
+.righttext p {
+  font-family: "keplerstd-regular-webfont";
+  font-size: 13px;
+}
+.exploretext {
+  float: left;
+  font-size: 14px;
+  padding: 42px 0 0;
+  width: 83px;
+}
+.footerlogo {
+  float: left;
+  margin-left: 0;
+  margin-right: 25px;
+  margin-top: 3px;
+  width: 137px;
+}
+.footercheck {
+  padding-right: 0;
+  padding-top: 6px;
+  width: 110px;
+}
+.footertext {
+  background: none repeat scroll 0 0 #252525;
+  padding: 10px;
+}
+.footertext2 a {
+  border-right: 1px solid #757474;
+  font-size: 11px;
+  padding: 0 3px;
+}
+}
+
+/* Media Queries  for iPhone 5 landscape � width: 598px Ends*/
+
+/* Media Queries  for iPhone 6 Plump portrait � width: 434px Starts*/
+
+@media screen and (max-width: 434px) {
+    	.container {
+    		max-width:100%;
+            }
+            .container{
+                margin: 15px;
+            }
+            img{
+                max-width: 100%;
+            }
+.like {
+  left: 270px;
+  margin-right: 50px;
+  position: absolute;
+}
+.slidertitle {
+  left: 110px;
+  top: 77px;
+}
+.slidertitle p {
+  font-size: 21px;
+}
+.lefttext {
+  margin: 10px 0 0;
+  text-align: justify;
+  width: 377px;
+}
+.lefttext p {
+  font-size: 18px;
+}
+.righttext {
+  font-size: 14px;
+  line-height: normal;
+  margin: 10px 0 0;
+  text-align: justify;
+  width: 365px;
+}
+.righttext p {
+  font-family: "keplerstd-regular-webfont";
+  font-size: 16px;
+}
+.exploretext {
+  float: none;
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 0;
+  width: 100%;
+}
+.exploreimage {
+  float: none;
+  padding-right: 0;
+  width: 100%;
+}
+.exploreimage img {
+  height: 270px;
+  max-width: 100%;
+}
+.footerlogo {
+  float: left;
+  margin: 3px 25px 6px 35px;
+  width: 280px;
+}
+.footertext1 {
+  color: #757474;
+  float: none;
+  font-size: 14px;
+  margin-left: 47px;
+}
+.footertext2 {
+  float: none;
+  margin-left: 80px;
+}
+}
+/* Media Queries  for iPhone 6 Plump portrait � width: 434px Ends*/

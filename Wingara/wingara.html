@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="phpuser" />
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="meanmenu.css" media="all" />
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <link href="wingara.css" rel="stylesheet" type="text/css"/>
+
+	<title>Wingara / Stokes Bay</title>
+    <!--Mean Menu JS start-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+       <!-- jQuery -->
+  <!-- FlexSlider -->
+  <script defer src="jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        prevText: "", //String: Set the text for the "previous" directionNav item
+        nextText: "", 
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+</head>
+
+    
+<body>
+<div class="wrapper">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <script src="jquery.meanmenu.js"></script>
+    <script type="text/javascript">
+    	jQuery(document).ready(function () {
+    	    jQuery('.nav-menu').meanmenu({
+    	       meanScreenWidth: "600",
+               meanMenuContainer: '.responsive-nav'
+    	    });
+    	});
+    </script>
+    <div class="container">
+        <!--Header Start -->
+        <div class="header">
+            <div class="logo">
+                <img src="image/wingaralogo.png"/>
+            </div>
+            <div class="responsive-nav"></div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Kangaroo Island</a></li>
+                    <li><a href="#">Rates and Availibility</a></li>
+                    <li><a href="#">Contact</a></li>
+                
+                </ul>
+                
+            </div>
+            <div class="like">
+            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" 
+            data-width="200" data-layout="button_count" data-action="like" data-show-faces="true"
+            data-share="false"></div>
+                
+            </div>
+            
+            <div style="clear: both;"></div>
+        </div>
+        
+        <!--Header Ends -->
+        <!--Image Slider Starts-->
+        <div class="mainbody">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+      	    	    <img src="image/1.jpg" />
+      	    		</li>
+      	    		<li>
+      	    	    <img src="image/1.jpg" />
+      	    		</li>                
+      	    		<li>
+      	    	    <img src="image/1.jpg" />
+      	    		</li>
+      	    		<li>
+      	    	    <img src="image/1.jpg" />
+      	    		</li>
+      	    		<li>
+      	    	    <img src="image/1.jpg" />
+      	    		</li>
+              </ul>
+            </div>
+            <div class="slidertitle">
+                <p>Kangaroo Island</p>
+            
+            </div>
+        </div>
+        <!--Image Slider Ends-->
+        <!--Bodytext Starts-->
+        <div class="bodytext">
+            <div class="lefttext">
+                <p>Wingara is a self contained Beach House retreat with breathtaking, uninterrupted  sea views, over 
+                    looking a natural boat basin and  invesigator straight to the Althorpe Islands.</p>
+            </div>
+            <div class="righttext">
+                <p>Situated on the water's edge, you can marvel at the abundance of local wildlife including Kangaroos, 
+                wallabies, dolphins, pelicans, seals and much more all form your private deck.<br />
+                <a href="#">Find out more</a></p>
+            </div>
+            <div style="clear: both;"></div> 
+        </div>
+        <!--Bodytext Ends-->
+        <!--Exploring parts Starts-->
+        <div class="explore">
+        
+            <div class="exploretext">
+                <a href="#">/Explore</a>
+            </div>
+            <div class="exploreimage">
+                <ul>
+                    <li><a href="#"><img src="image/image1.jpg"/></a></li>
+                    <li><a href="#"><img src="image/image2.jpg"/></a></li>
+                    <li><a href="#"><img src="image/image3.jpg"/></a></li>
+                    
+                </ul>
+            </div>
+            <div style="clear: both;"></div> 
+        </div>
+        <!--Exploring parts Ends-->
+        <!--Quotas Parts Starts-->
+                <div class="quotas">
+                    <div class="flexslider">
+                      <ul class="slides">
+                        <li>“One of Kangaroo Islands best kept secrets, such a beautiful place to visit.”
+                            <div class="horizontalline"><span></span>
+                            <p>JOHN SMITH, MELBOURNE, VIC</p>
+                            </div>
+                        </li>
+                        <li>“One of Kangaroo Islands best kept secrets, such a beautiful place to visit.”
+                            <div class="horizontalline"><span></span>
+                            <p>JOHN SMITH, MELBOURNE, VIC</p>
+                            </div>
+                        </li>
+                        <li>“One of Kangaroo Islands best kept secrets, such a beautiful place to visit.”
+                            <div class="horizontalline"><span></span>
+                            <p>JOHN SMITH, MELBOURNE, VIC</p>
+                            </div>
+                        </li>            	    		
+                      </ul>
+                  </div>
+            
+            </div>
+        <!--Quotas Parts Ends-->
+       
+  </div>      
+ <!--Footer Part Starts-->
+        <div class="mainfooter">
+            <div class="footer">
+                <div class="footerlogo">
+                    <img src="image/wingaralogo2.png"/>
+                </div>
+                <div class="footerinfo">
+                    <ul>
+                        <li><a href="#"><p><strong>Email</strong> &nbsp; &nbsp; hello@wingarastokesbay.com.au</p></a></li>
+                        <li><a href="#"><strong>Phone</strong> &nbsp; &nbsp; 08 8559 2121 or 0427 597 222</a></li>
+                        <li><a href="#"><strong>Where</strong> &nbsp; &nbsp; Find Location</a></li>
+                    </ul>
+                </div>
+                <div class="footercheck">
+                    <button>Check Availibility</button>
+                </div>
+                <div class="footerline">
+                <span></span>
+                </div>
+                 <div style="clear: both;"></div>
+            </div>
+            <div class="footertext">
+                <div class="footertext1">
+                    <p>© 2014 Wingara Stokes Bay. All rights reserved.</p>
+                </div>
+                <div class="footertext2">
+                    <ul>
+                        <li><a href="#"> Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Site By Health Vogt</a></li>
+                    </ul>
+                </div>
+            <div style="clear: both;"></div>
+            </div>
+        </div>
+        <!--Footer Parts Ends-->
+</div>
+</body>
+</html>
